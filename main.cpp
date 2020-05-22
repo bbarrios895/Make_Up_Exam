@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-void fill_array(int Numbers);
 
 
 
@@ -10,24 +9,24 @@ void fill_array(int Numbers);
 
 int main() {
 
- int Size;
-
-    cout << "How many numbers do you want to enter?" << endl;
-    //user enters number
-    cin>>Size;
+    //declare variables
+    int UserInput, number, i;
 
 
+    cout << "How many numbers do you wish to enter? ";
+    // take user input
+    cin >> UserInput;
+//for loop to run amount of times of user input value
+    for (i = 0; i < UserInput; i++)
+    {
+        //request number from user input to fill spaces 
+        cout << "Enter a number: ";
+        cin >> number;
 
-   vector< int >nums;
 
-   for(int i= 1; i <= Size;i++)
-   {
-     nums.push_back(i);
-   }
-   for(int j = 0; j < Size; j++)
-   {
-       cout<< nums[j]<<" ";
-   }
+
+    }
+
 
     return 0;
 }
