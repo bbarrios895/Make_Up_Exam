@@ -6,48 +6,28 @@ void fill_array(int Numbers);
 
 
 
-void  fill_array(int array[],int Size) {
 
-    for (int i = 0; i < Size; i++)
-    {
-
-cout<<array[i]<<"\t";
-    }
-cout<<endl;
-}
 
 int main() {
 
- int Numbers;
-
+ int Size;
 
     cout << "How many numbers do you want to enter?" << endl;
     //user enters number
-    cin>>Numbers;
-    int nums[Numbers];
-    //fill_array( Numbers);
-    //cout<<"enter a number";
-
-//check to see if statement is true to enter whileloop
+    cin>>Size;
 
 
-    int count=0;
-    for(int i=0; i<Numbers; i++)
-    {
 
-       if(cin>>nums[i])
-       {
-           count++;
-       }
-       else
-           {
+   vector< int >nums;
 
-           break;
-       }
-
-
-    }
- fill_array( nums,count);
+   for(int i= 1; i <= Size;i++)
+   {
+       nums.push_back(i);
+   }
+   for(int j = 0; j < 10; j++)
+   {
+       cout<< nums[j]<<" ";
+   }
 
     return 0;
 }
