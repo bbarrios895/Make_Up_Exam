@@ -22,9 +22,9 @@ int main() {
 
    for(int i= 1; i <= Size;i++)
    {
-       nums.push_back(i);
+     nums.push_back(i);
    }
-   for(int j = 0; j < 10; j++)
+   for(int j = 0; j < Size; j++)
    {
        cout<< nums[j]<<" ";
    }
